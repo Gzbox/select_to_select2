@@ -1,12 +1,14 @@
-# Select To Select2 Plugin
+# Fork form [sf-cola/select_to_select2](https://github.com/sf-cola/select_to_select2)
+
+## Select To Select2 Plugin
 
 This is a repository of 「Select To Select2 Plugin」 which is a Redmine plugin.
 
 ## Version description
 
-Upgrade the select2 from `3.4.5` to `3.4.6`.
-Fix incompatible `redmine 4.2.3`.
-Self-test `redmine 4.2.3` operates normally. Other versions are not tested
+- Upgrade the select2 from `3.4.5` to `3.4.6`.
+- Fix incompatible `redmine 4.2.3`.
+- Self-test `redmine 4.2.3` operates normally. Other versions are not tested
 
 ## Features
 
