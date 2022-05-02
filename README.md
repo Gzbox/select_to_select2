@@ -18,7 +18,7 @@ Replace all select tag to select2 in all Redmine's Pages.
 
 ## Installation
 
-1.`$git clone https://github.com/sf-cola/select_to_select2.git`
+1.`git clone https://github.com/Gzbox/select_to_select2`
 
 2.Copy to `apps/redmine/htdocs/plugins`
 
