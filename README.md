@@ -20,6 +20,6 @@ Replace all select tag to select2 in all Redmine's Pages.
 
 1.`git clone https://github.com/Gzbox/select_to_select2`
 
-2.Copy to `apps/redmine/htdocs/plugins`
+2.Copy to `apps/redmine/plugins`
 
 3.`bundle exec rake redmine:plugins:migrate NAME=select_to_select2 RAILS_ENV=production`
