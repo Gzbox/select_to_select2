@@ -1867,7 +1867,17 @@ the specific language governing permissions and limitations under the Apache Lic
 
             var width = resolveContainerWidth.call(this);
             if (width !== null) {
-                this.container.css("width", width);
+                let finalResultWidth = width
+                let clientWidth = document.documentElement.clientWidth // 屏幕可见区域的宽度
+                let leftBoundingClientRect = $(this.container)[0].getBoundingClientRect().left // 容器距离左侧屏幕的距离
+                if (typeof width === "string" && width.includes('px')) {
+                    let newWidth = width.split('px')[0] - 0
+                    if (leftBoundingClientRect + newWidth > clientWidth) {
+                        let exceededValue = leftBoundingClientRect + newWidth - clientWidth
+                        finalResultWidth = newWidth - exceededValue - 66
+                    }
+                }
+                this.container.css("width", finalResultWidth);
             }
         }
     });
