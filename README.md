@@ -4,11 +4,13 @@
 
 This is a repository of 「Select To Select2 Plugin」 which is a Redmine plugin.
 
-## Version description
+## Description of this warehouse
 
 - Upgrade the select2 from `3.4.5` to `3.4.6`.
 - Fix incompatible `redmine 4.2.3`.
-- Self-test `redmine 4.2.3` operates normally. Other versions are not tested
+- Optimize the multi-selection state switching, the problem that the interface is not refreshed in time.
+- Fix the problem that the content of the select option will exceed the visible area of the screen when it is too long.
+- Self-test `redmine 4.2.3` operates normally. Other versions are not tested.
 
 ## Features
 
